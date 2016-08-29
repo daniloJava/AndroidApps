@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Aula02</string>
+    
+    <string name="action_settings">Settings</string>
+    
+    <string name="stringTextViewNome">Nome:</string>
+    <string name="stringTextViewSobrenome">Sobrenome:</string>
+ 	<string name="stringNomeInput">Insira seu primeiro Nome:</string>
+ 	<string name="stringSobreNomeInput">Insira seu sobrenome:</string>
+ 	<string name="buttomConcatena">Concatena</string>
+ 	
+
+</resources>
