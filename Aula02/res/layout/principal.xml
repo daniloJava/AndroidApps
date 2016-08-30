@@ -40,17 +40,6 @@
         android:layout_marginTop="29dp"
         android:text="@string/stringTextViewNome" />
 
-    <EditText
-        android:id="@+id/editTextSobrenome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textViewSobrenome"
-        android:layout_below="@+id/textViewSobrenome"
-        android:layout_marginTop="29dp"
-        android:ems="10"
-        android:hint="@string/stringTextViewSobrenome"
-        android:inputType="text" />
-
     <Button
         android:id="@+id/buttonEnter"
         android:layout_width="wrap_content"
@@ -60,5 +49,26 @@
         android:layout_below="@+id/editTextSobrenome"
         android:layout_marginTop="24dp"
         android:text="@string/buttomConcatena" />
+
+    <EditText
+        android:id="@+id/editTextSobrenome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewSobrenome"
+        android:layout_alignStart="@+id/textViewSobrenome"
+        android:layout_below="@+id/textViewSobrenome"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="@string/stringTextViewSobrenome"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/buttonEnter"
+        android:layout_alignRight="@+id/buttonEnter"
+        android:layout_below="@+id/buttonEnter"
+        android:layout_marginTop="34dp" />
 
 </RelativeLayout>

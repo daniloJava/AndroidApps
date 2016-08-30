@@ -3,14 +3,45 @@ package br.com.aula02.helloword;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
-import android.view.MenuItem;
+import android.view.MenuItem;import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class PrincipalAula02 extends Activity {
 
+	
+	/**na hora que ela é criada.
+	 * 
+	 * 
+	 */
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		// é o caminho da pasta que abre a tela exibindo a View
 		setContentView(R.layout.principal);
+		
+		
+		//Recuperando o valor do Botão, somente criando um objeto
+		Button botao = (Button) findViewById(R.id.buttonEnter);
+		
+		//metodo para quando Clicar no botão  sobrescrevendo o metodo da classe abastrata View
+		botao.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				
+				//Pegando os valores dos inputs.
+				EditText txtNome = (EditText) findViewById(R.id.editTextNome);
+				EditText txtSobrenome = (EditText) findViewById(R.id.editTextSobrenome);
+				//recupera o lugar da saida
+				TextView textSaida = (TextView) findViewById(R.id.textViewResult);
+				
+				//Seta a concatenação
+				textSaida.setText(txtNome.getText().toString() +" " + txtSobrenome.getText().toString());
+			}
+		});
+		
 	}
 
 	@Override
