@@ -11,14 +11,15 @@ import android.widget.TextView;
 public class PrincipalAula02 extends Activity {
 
 	
-	/**na hora que ela é criada.
-	 * 
+	/**na hora que a aplicação é inicializada,
+	 * tudo é rodado aqui, como se fosse um metodo construtor.
 	 * 
 	 */
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		// é o caminho da pasta que abre a tela exibindo a View
+		//R é onde está os arquivos de configuração
 		setContentView(R.layout.principal);
 		
 		

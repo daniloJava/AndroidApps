@@ -54,7 +54,8 @@
         android:id="@+id/editTextSobrenome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textViewSobrenome"
+        android:layout_alignEnd="@+id/textViewSobrenome"
+        android:layout_alignRight="@+id/editTextNome"
         android:layout_alignStart="@+id/textViewSobrenome"
         android:layout_below="@+id/textViewSobrenome"
         android:layout_marginTop="22dp"
@@ -67,7 +68,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/buttonEnter"
-        android:layout_alignRight="@+id/buttonEnter"
+        android:layout_alignEnd="@+id/buttonEnter"
         android:layout_below="@+id/buttonEnter"
         android:layout_marginTop="34dp" />
 
