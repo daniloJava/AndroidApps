@@ -1,0 +1,145 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.aulaa04.MainActivity" >
+
+    <LinearLayout 
+        android:id="@+id/linearLayoutZica"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:gravity="center_horizontal"
+       
+        >
+
+        <LinearLayout
+            android:id="@+id/linearLayoutFirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+            >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N1"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewOperador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginLeft="40dp"
+            android:textSize="40dp" 
+            />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayoutFirst"
+            
+            android:layout_marginLeft="50dp"
+            android:orientation="vertical"> 
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N2"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutZica2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/linearLayoutZica"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        >
+        <Button 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bntSoma"
+            android:text="+"
+            />
+         <Button 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bntSubtrai"
+            android:text="-"
+            />
+          <Button 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bntMultiplica"
+            android:text="*"
+            />
+           <Button 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bntDividir"
+            android:text="/"
+            />
+			
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutZica3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/linearLayoutZica2"
+        android:layout_below="@+id/linearLayoutZica2"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/bntCalcular"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="calcular" />
+
+        <TextView
+            android:id="@+id/bntResultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btncalcular"
+            android:text="Resultado"
+            android:textSize="20dp" 
+            android:layout_gravity="center"
+            />
+			<TextView
+                android:id="@+id/TextViewResult"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bntResultado"
+                android:inputType="textPersonName" 
+                android:layout_gravity="center"
+                  android:textSize="20dp" 
+                />
+    </LinearLayout>
+
+</RelativeLayout>
