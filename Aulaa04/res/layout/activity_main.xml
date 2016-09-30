@@ -38,14 +38,6 @@
                 android:inputType="textPersonName" />
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/textViewOperador"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=""
-            android:layout_marginLeft="40dp"
-            android:textSize="40dp" 
-            />
 
         <LinearLayout
             android:id="@+id/linearLayoutSecond"
