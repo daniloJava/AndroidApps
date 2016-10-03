@@ -9,5 +9,6 @@
     <string name="stringTxtSegundoNome">Segundo Nome</string>
     <string name="title_activity_segunda_tela">SegundaTela</string>
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_terceira_tela">TerceiraTela</string>
 
 </resources>

@@ -13,7 +13,6 @@ public class MainActivity extends Activity {
 	private Button btnAvanca;
 	private Button btnVoltar = null;
 	private EditText primeiroNome;
-//	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,16 +26,14 @@ public class MainActivity extends Activity {
 			
 			@Override
 			public void onClick(View v) {
-
+			Intent i = new Intent(getApplicationContext(), SegundaTela.class);
         	primeiroNome = (EditText) findViewById(R.id.editTextPrimeiroNome);
-//				i.putExtra("primeiroNomeShow", primeiroNome.toString());
-//				btnClik();
-				
+			i.putExtra("primeiroNomeShow", primeiroNome.toString());
+        	startActivity(i);
 			}
 
-			
 		});
-        receberDados();
+//        receberDados();
     
     }
 
@@ -48,12 +45,6 @@ public class MainActivity extends Activity {
 		
 	}
 	
-//	private void btnClik() {
-//		// TODO Auto-generated method stub
-//		Intent i = new Intent(this, SegundaTela.class);
-//		startActivity(i);
-//		
-//	}
 
 
 }

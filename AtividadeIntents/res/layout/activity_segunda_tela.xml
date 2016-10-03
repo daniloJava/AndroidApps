@@ -40,12 +40,7 @@
         android:layout_below="@+id/linearLayoutFirst"
         >
         
-		<Button
-            android:id="@+id/btnVoltar"
-            style="?android:attr/buttonStyleToggle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/stringVoltar" />
+		
         
         <Button
             android:id="@+id/btnAvancar"

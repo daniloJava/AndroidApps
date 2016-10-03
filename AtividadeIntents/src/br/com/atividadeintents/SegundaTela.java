@@ -1,24 +1,41 @@
 package br.com.atividadeintents;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
 
 public class SegundaTela extends Activity {
 
-//	private Button btnAvanca;
-//	private Button btnVoltar;
-//	private EditText primeiroNome;
+	private Button btnAvanca;
+	private EditText segundoNome;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_segunda_tela);
 		
-//		 btnAvanca  = (Button) findViewById(R.id.btnAvancar);
-//	     btnVoltar  = (Button) findViewById(R.id.btnVoltar);
-//	     primeiroNome = (EditText) findViewById(R.id.editTextPrimeiroNome);
-//	     
-//	     System.out.println(primeiroNome.toString());
+		 btnAvanca  = (Button) findViewById(R.id.btnAvancar);
+	     segundoNome = (EditText) findViewById(R.id.editTextPrimeiroNome);
+	     
+	     Intent intent = getIntent();
+	     String priNome = intent.getStringExtra("primeiroNomeShow");
+	     
+	     
+	     btnAvanca.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+
+				Intent i = new Intent(getApplicationContext(), TerceiraTela.class);
+	        	segundoNome = (EditText) findViewById(R.id.editTextSegundoNome);
+				i.putExtra("segundooNomeShow", segundoNome.toString());
+	        	startActivity(i);
+			}
+		});
 	     
 	}
 

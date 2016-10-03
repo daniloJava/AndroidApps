@@ -26,6 +26,10 @@
             android:name=".SegundaTela"
             android:label="@string/title_activity_segunda_tela" >
         </activity>
+        <activity
+            android:name=".TerceiraTela"
+            android:label="@string/title_activity_terceira_tela" >
+        </activity>
     </application>
 
 </manifest>
