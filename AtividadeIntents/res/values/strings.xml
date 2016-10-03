@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AtividadeIntents</string>
+    <string name="action_settings">Settings</string>
+    <string name="stringAvanca">AVANÇAR</string>
+    <string name="stringVoltar">VOLTAR</string>
+    <string name="stringTxtPrimeiroNome">Primeiro Nome</string>
+    <string name="stringTxtSegundoNome">Segundo Nome</string>
+    <string name="title_activity_segunda_tela">SegundaTela</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>
