@@ -12,6 +12,7 @@ public class SegundaTela extends Activity {
 
 	private Button btnAvanca;
 	private EditText segundoNome;
+	private String priNome;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +23,9 @@ public class SegundaTela extends Activity {
 	     segundoNome = (EditText) findViewById(R.id.editTextPrimeiroNome);
 	     
 	     Intent intent = getIntent();
-	     String priNome = intent.getStringExtra("primeiroNomeShow");
+	     Bundle params = intent.getExtras();
+	     
+	     priNome = params.getString("primeiroNomeShow");
 	     
 	     
 	     btnAvanca.setOnClickListener(new OnClickListener() {
@@ -32,7 +35,10 @@ public class SegundaTela extends Activity {
 
 				Intent i = new Intent(getApplicationContext(), TerceiraTela.class);
 	        	segundoNome = (EditText) findViewById(R.id.editTextSegundoNome);
-				i.putExtra("segundooNomeShow", segundoNome.toString());
+	        	
+				i.putExtra("segundooNomeShow", segundoNome.getText().toString());
+				i.putExtra("primeiroNomeShow", priNome);
+				
 	        	startActivity(i);
 			}
 		});
