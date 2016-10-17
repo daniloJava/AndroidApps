@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Atividade2</string>
+    <string name="txtnome_">Nome: </string>
+    <string name="btnProximo">Proximo</string>
+    <string name="title_activity_tela2">Tela2</string>
+    <string name="e_mail">E-Mail: </string>
+    <string name="title_activity_tela3">Tela3</string>
+    <string name="Telefone">Telefone: </string>
+    <string name="title_activity_ultima">Ultima</string>
+    <string name="inicial">Inicial</string>
+    <string name="action_settings">TODO</string>
+
+</resources>

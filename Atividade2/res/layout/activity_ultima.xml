@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.atividade2.Ultima" 
+    android:orientation="vertical"
+    >
+    
+	<LinearLayout 
+	    android:id="@+id/linear1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+		android:layout_margin="20dp"
+	    >
+    <TextView 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/app_name"
+		android:textSize="20dp"
+     />
+      <TextView 
+        android:id="@+id/txtResultadoNome"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="15dp"
+		android:layout_marginLeft="10dp"
+     />
+    </LinearLayout>
+    
+	<LinearLayout 
+	    android:id="@+id/linear2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+		android:layout_margin="20dp"
+	    >
+    <TextView 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/e_mail"
+		android:textSize="20dp"
+     />
+    <TextView 
+        android:id="@+id/txtResultadoEmail"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="15dp"
+		android:layout_marginLeft="10dp"
+     />
+    
+    </LinearLayout>
+    
+	<LinearLayout 
+	    android:id="@+id/linear3"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+		android:layout_margin="20dp"
+	    >
+    <TextView 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/Telefone"
+		android:textSize="20dp"
+     />
+    <TextView 
+        android:id="@+id/txtResultadoTelefone"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="15dp"
+		android:layout_marginLeft="10dp"
+     />
+    
+    </LinearLayout>
+    
+    <Button 
+		android:id="@+id/btnInicial"
+        android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="30dp"
+        android:text="@string/inicial"
+		android:layout_margin="20dp"
+        />
+    
+    
+</LinearLayout>
